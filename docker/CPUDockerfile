@@ -10,7 +10,7 @@ RUN pip install --upgrade pip && \
 
 ARG version
 
-RUN pip install lama-cleaner==$version
+RUN pip install lama-cleaner==1.2.0
 RUN lama-cleaner --install-plugins-package
 ENV LD_PRELOAD=/usr/local/lib/python3.10/site-packages/skimage/_shared/../../scikit_image.libs/libgomp-d22c30c5.so.1.0.0
 
